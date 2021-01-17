@@ -69,7 +69,7 @@ class _TodoListPageState extends State<TodoListPage> {
             ),
             Expanded(
               child: ListView(
-                children: [], // 뒤에서 계속 작성
+                children: _items.map((todo) => _buildItemWidget(todo)).toList(),
               ),
             ),
           ],
