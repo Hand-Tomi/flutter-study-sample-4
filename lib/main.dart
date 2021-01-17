@@ -77,4 +77,24 @@ class _TodoListPageState extends State<TodoListPage> {
       ),
     );
   }
+
+  // 할 일 객체를 ListTile 형태로 변경하는 메서드
+  Widget _buildItemWidget(Todo todo) {
+    return ListTile(
+      onTap: () {},
+      title: Text(
+        todo.title,
+        style: todo.isDone
+            ? TextStyle(
+                decoration: TextDecoration.lineThrough,
+                fontStyle: FontStyle.italic,
+              )
+            : null,
+      ),
+      trailing: IconButton(
+        icon: Icon(Icons.delete_forever),
+        onPressed: () {},
+      ),
+    );
+  }
 }
