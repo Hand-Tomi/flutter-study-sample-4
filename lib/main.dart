@@ -63,7 +63,7 @@ class _TodoListPageState extends State<TodoListPage> {
                 ),
                 RaisedButton(
                   child: Text('추가'),
-                  onPressed: () {}, // 뒤에서 계속 작성
+                  onPressed: () => _addTodo(Todo(_todoController.text)),
                 ),
               ],
             ),
