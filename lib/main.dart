@@ -81,7 +81,7 @@ class _TodoListPageState extends State<TodoListPage> {
   // 할 일 객체를 ListTile 형태로 변경하는 메서드
   Widget _buildItemWidget(Todo todo) {
     return ListTile(
-      onTap: () {},
+      onTap: () => _toggleTodo(todo),
       title: Text(
         todo.title,
         style: todo.isDone
