@@ -93,7 +93,7 @@ class _TodoListPageState extends State<TodoListPage> {
       ),
       trailing: IconButton(
         icon: Icon(Icons.delete_forever),
-        onPressed: () {},
+        onPressed: () => _deleteTodo(todo),
       ),
     );
   }
