@@ -7,10 +7,10 @@ void main() {
 
 // 할 일 클래스
 class Todo {
-  bool isDone = false;
+  bool isDone;
   String title;
 
-  Todo(this.title);
+  Todo(this.title, {this.isDone = false});
 }
 
 // 시작 클래스
